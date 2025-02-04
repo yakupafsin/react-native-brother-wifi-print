@@ -1,6 +1,6 @@
 {
   "name": "react-native-brother-wifi-print",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Brother printers",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
