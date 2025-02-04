@@ -10,15 +10,24 @@ npm install react-native-brother-wifi-print
 
 ## Usage
 
+### printImage
 
 ```js
-import { multiply } from 'react-native-brother-wifi-print';
+import { printImage } from 'react-native-brother-wifi-print';
 
-// ...
+const printerIp = '192.168.1.100';
+const imagePath = '/path/to/image.png';
+const options = {
+  printerModel: 'QL_810W',
+  labelSize: 'RollW62RB',
+  isAutoCut: true,
+  isCutAtEnd: true,
+  autoCutForEachPageCount: 1,
+  quality: 'HighResolution',
+};
 
-const result = multiply(3, 7);
+printImage(printerIp, imagePath, options);
 ```
-
 
 ## Contributing
 
